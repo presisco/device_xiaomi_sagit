@@ -223,6 +223,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
